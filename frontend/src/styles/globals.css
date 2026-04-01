@@ -71,9 +71,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans:
-    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Monaco, Menlo, monospace;
 
   --animate-fade-in: fade-in 1.1s;
   @keyframes fade-in {
@@ -289,7 +289,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @layer base {
