@@ -13,8 +13,8 @@ export default function LoginPage() {
         <TitleCard />
       </div>
 
-      {/* 右侧登录卡片 */}
-      <div className="relative z-10 flex h-screen items-center justify-end px-12">
+      {/* 中间登录卡片 */}
+      <div className="relative z-10 flex h-screen items-center justify-center">
         <LoginCard />
       </div>
     </main>
