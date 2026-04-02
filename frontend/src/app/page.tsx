@@ -29,18 +29,19 @@ export default function LoginPage() {
           >
             Cocoon Break
           </h1>
-          <p className="mt-4 italic text-xl text-[#c9b896]">
-            # See Through the Cocoon _
-          </p>
-
-          {!showLogin && (
-            <button
-              onClick={() => setShowLogin(true)}
-              className="mt-4 text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
-            >
-              Continue →
-            </button>
-          )}
+          <div className="flex items-center gap-4 mt-4">
+            <p className="italic text-xl text-[#c9b896]">
+              # See Through the Cocoon _
+            </p>
+            {!showLogin && (
+              <button
+                onClick={() => setShowLogin(true)}
+                className="text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
+              >
+                Continue →
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
