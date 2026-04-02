@@ -16,7 +16,7 @@ export function TitleCard() {
         Cocoon Break
       </h1>
       <p className="mt-3 italic text-xl text-[#c9b896] md:text-2xl">
-        Find Your Clarity
+        See Through the Cocoon...
       </p>
     </div>
   );
