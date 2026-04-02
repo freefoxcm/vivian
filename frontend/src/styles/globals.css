@@ -534,3 +534,8 @@
   --butterfly-float: floatUp 8s ease-in-out 3s infinite;
   --butterfly-flap: wingFlap 0.3s ease-in-out infinite;
 }
+
+/* 背景渐变基础 */
+body {
+  @apply bg-[#0d1f17];
+}
