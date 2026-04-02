@@ -16,7 +16,7 @@ export default function LoginPage() {
       {/* 标题卡片 - 垂直水平居中 */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <div
-          className="flex flex-col items-start justify-between p-12"
+          className="flex flex-col items-start justify-start p-12"
           style={{
             backgroundColor: "rgba(255, 252, 245, 0.03)",
             backdropFilter: "blur(8px)",
@@ -39,7 +39,7 @@ export default function LoginPage() {
           {!showLogin && (
             <button
               onClick={() => setShowLogin(true)}
-              className="self-end text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
+              className="self-end mt-4 text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
             >
               Continue →
             </button>
