@@ -283,8 +283,8 @@
   --accent: oklch(0.32 0.0036 106.64);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.45 0.008 250 / 60%);
-  --input: oklch(0.55 0.01 250 / 70%);
+  --border: oklch(0.40 0.08 195 / 45%);
+  --input: oklch(0.45 0.10 200 / 50%);
   --ring: transparent;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
@@ -308,6 +308,22 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Dark mode hover glow effect for interactive elements */
+  .dark .glow-hover {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  }
+
+  .dark .glow-hover:hover {
+    border-color: oklch(0.45 0.10 200 / 50%) !important;
+    box-shadow: 0 0 16px oklch(0.40 0.08 195 / 40%), inset 0 0 8px oklch(0.40 0.08 195 / 15%);
+  }
+
+  .dark .glow-hover-accent:hover {
+    border-color: oklch(0.45 0.10 200 / 50%) !important;
+    box-shadow: 0 0 16px oklch(0.40 0.08 195 / 40%), inset 0 0 8px oklch(0.40 0.08 195 / 15%);
+    background-color: oklch(0.32 0.0036 106.64);
   }
 
   .container-md {

@@ -21,7 +21,7 @@ export const Suggestions = ({
       {Children.map(children, (child, index) =>
         child != null ? (
           <span
-            className="animate-fade-in-up inline-block opacity-0"
+            className="animate-fade-in-up inline-block opacity-0 pointer-events-auto"
             style={{
               animationDelay: `${STAGGER_DELAY_MS_OFFSET + index * STAGGER_DELAY_MS}ms`,
             }}
@@ -60,7 +60,7 @@ export const Suggestion = ({
   return (
     <Button
       className={cn(
-        "text-muted-foreground cursor-pointer rounded-full px-4 text-xs font-normal",
+        "text-muted-foreground cursor-pointer rounded-full px-4 text-xs font-normal dark:hover:border-[oklch(0.45_0.10_200_/_50%)] dark:glow-hover",
         className,
       )}
       onClick={handleClick}
