@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
 import { type ButtonHTMLAttributes } from "react";
 
 interface PrimaryButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -17,6 +16,7 @@ export function PrimaryButton({
 }: PrimaryButtonProps) {
   return (
     <button
+      type="button"
       onClick={onClick}
       className={cn(
         // Base styles
