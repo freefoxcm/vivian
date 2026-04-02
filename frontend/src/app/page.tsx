@@ -16,30 +16,27 @@ export default function LoginPage() {
       {/* 标题卡片 - 垂直水平居中 */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <div
-          className="flex flex-col items-start justify-between p-8"
+          className="flex flex-col items-start p-8"
           style={{
             backgroundColor: "rgba(255, 252, 245, 0.03)",
             backdropFilter: "blur(8px)",
             minWidth: "600px",
-            minHeight: "300px",
           }}
         >
-          <div>
-            <h1
-              className="text-5xl font-semibold text-[#f0e6d0] tracking-wide"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-            >
-              Cocoon Break
-            </h1>
-            <p className="mt-6 italic text-xl text-[#c9b896]">
-              # See Through the Cocoon _
-            </p>
-          </div>
+          <h1
+            className="text-5xl font-semibold text-[#f0e6d0] tracking-wide"
+            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+          >
+            Cocoon Break
+          </h1>
+          <p className="mt-4 italic text-xl text-[#c9b896]">
+            # See Through the Cocoon _
+          </p>
 
           {!showLogin && (
             <button
               onClick={() => setShowLogin(true)}
-              className="self-end mt-4 text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
+              className="mt-4 text-sm tracking-[0.2em] text-[#c9b896] hover:text-[#f0e6d0] transition-colors duration-200"
             >
               Continue →
             </button>
