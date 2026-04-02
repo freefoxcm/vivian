@@ -27,7 +27,7 @@ export function LoginCard() {
     >
       {/* Logo 和标题 */}
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-4xl font-bold text-[#f0e6d0] md:text-5xl" style={{ fontFamily: "'ZCOOL XiaoWei', serif" }}>
+        <h1 className="text-4xl font-normal text-[#f0e6d0] md:text-5xl" style={{ fontFamily: "'Ma Shan Zheng', cursive" }}>
           破茧
         </h1>
         <p className="italic text-lg text-[#c9b896] md:text-xl">
