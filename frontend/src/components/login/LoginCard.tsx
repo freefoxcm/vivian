@@ -46,7 +46,7 @@ export function LoginCard() {
         {/* 登录按钮 */}
         <div className="mt-2">
           <GradientButton type="submit">
-            进入探索
+            Continue
           </GradientButton>
         </div>
       </form>
@@ -62,7 +62,7 @@ export function LoginCard() {
             transition-colors duration-200
           "
         >
-          探索更多 →
+          More →
         </a>
       </div>
     </div>
