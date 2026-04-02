@@ -25,19 +25,6 @@ export function LoginCard() {
         boxShadow: "0 0 80px rgba(255, 200, 100, 0.08), 0 0 120px rgba(255, 200, 100, 0.04)",
       }}
     >
-      {/* Logo 和标题 */}
-      <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-4xl font-semibold text-[#f0e6d0] md:text-5xl" style={{ fontFamily: "'Cormorant', serif" }}>
-          Cocoon Break
-        </h1>
-        <p className="italic text-lg text-[#c9b896] md:text-xl">
-          Find Your Clarity
-        </p>
-      </div>
-
-      {/* 分隔线 */}
-      <div className="h-px w-3/4 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-
       {/* 表单 */}
       <form className="w-full flex flex-col gap-4">
         <Input
