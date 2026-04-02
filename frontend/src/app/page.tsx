@@ -65,7 +65,7 @@ export default function LoginPage() {
                 border: "1px solid rgba(200, 160, 100, 0.3)",
               }}
             >
-              {showLogin ? "# Back" : "# Continue"}
+              {showLogin ? "> Back" : "> Continue"}
             </button>
           </div>
         </div>
