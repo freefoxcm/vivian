@@ -8,11 +8,11 @@ export function LoginCard() {
     <div
       className="
         relative z-10
-        w-full max-w-[380px]
+        w-full max-w-[340px]
         rounded-2xl
-        border border-white/10
+        border border-white/[0.06]
         bg-white/8
-        p-10
+        p-8
         backdrop-blur-md
         flex
         flex-col
@@ -20,8 +20,9 @@ export function LoginCard() {
         gap-6
       "
       style={{
-        backgroundColor: "rgba(255, 252, 245, 0.08)",
-        backdropFilter: "blur(15px)",
+        backgroundColor: "rgba(255, 252, 245, 0.05)",
+        backdropFilter: "blur(12px)",
+        boxShadow: "0 0 80px rgba(255, 200, 100, 0.08), 0 0 120px rgba(255, 200, 100, 0.04)",
       }}
     >
       {/* Logo 和标题 */}
