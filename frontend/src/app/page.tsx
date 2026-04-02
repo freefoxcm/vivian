@@ -10,7 +10,7 @@ export default function LoginPage() {
 
       {/* 层叠布局 */}
       <div className="relative z-10 flex h-screen items-center justify-center">
-        <div className="absolute top-1/3 -translate-y-1/2">
+        <div className="absolute top-1/2 -translate-y-6">
           <TitleCard />
         </div>
         <div className="absolute top-1/2">
