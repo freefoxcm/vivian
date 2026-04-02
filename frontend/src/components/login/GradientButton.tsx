@@ -26,10 +26,10 @@ export function GradientButton({
         className
       )}
       style={{
-        backgroundColor: "rgba(180, 140, 80, 0.4)",
+        backgroundColor: "rgba(180, 140, 80, 0.2)",
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)",
-        border: "1px solid rgba(200, 160, 100, 0.3)",
+        border: "1px solid rgba(200, 160, 100, 0.2)",
       }}
       {...props}
     >
