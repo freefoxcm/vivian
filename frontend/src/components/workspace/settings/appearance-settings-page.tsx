@@ -137,7 +137,9 @@ function ThemePreviewCard({
       className={cn(
         "group flex h-full flex-col gap-3 rounded-lg border p-4 text-left transition-all",
         active
-          ? "border-primary ring-primary/30 shadow-sm ring-2"
+          ? previewMode === "dark"
+            ? "border-emerald-900 ring-emerald-900/30 shadow-sm ring-2"
+            : "border-primary ring-primary/30 shadow-sm ring-2"
           : "hover:border-border hover:shadow-sm",
       )}
     >
@@ -154,10 +156,14 @@ function ThemePreviewCard({
       </div>
       <div
         className={cn(
-          "relative overflow-hidden rounded-md border text-xs transition-colors",
-          previewMode === "dark"
-            ? "border-neutral-800 bg-neutral-900 text-neutral-200"
-            : "border-slate-200 bg-white text-slate-900",
+          "relative overflow-hidden rounded-md text-xs transition-colors",
+          active
+            ? previewMode === "dark"
+              ? "bg-neutral-900 text-neutral-200"
+              : "bg-white text-slate-900"
+            : previewMode === "dark"
+              ? "border border-neutral-800 bg-neutral-900 text-neutral-200"
+              : "border border-slate-200 bg-white text-slate-900",
         )}
       >
         <div className="border-border/50 flex items-center gap-2 border-b px-3 py-2">
