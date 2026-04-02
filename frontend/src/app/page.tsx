@@ -1,5 +1,4 @@
-import { WelcomeCard } from "@/components/login";
-import { ButterflyAnimation } from "@/components/login";
+import { WelcomeCard, ButterflyAnimation } from "@/components/login";
 
 export default function WelcomePage() {
   return (
