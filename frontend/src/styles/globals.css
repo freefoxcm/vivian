@@ -326,6 +326,91 @@
     background-color: oklch(0.32 0.0036 106.64);
   }
 
+  /* Butterfly animations */
+  @keyframes butterflyEmerge {
+    0% {
+      transform: translateY(100vh) scale(0.3);
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(50vh) scale(0.6);
+    }
+    70% {
+      transform: translateY(30vh) scale(0.8);
+    }
+    100% {
+      transform: translateY(20vh) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(100vh) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(50vh) translateX(30px) rotate(10deg);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-20vh) translateX(-20px) rotate(-5deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes wingFlap {
+    0%, 100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.6);
+    }
+  }
+
+  .butterfly-container {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation:
+      butterflyEmerge 3s ease-out forwards,
+      floatUp 8s ease-in-out 3s infinite;
+  }
+
+  .wing {
+    transform-origin: 50% 50%;
+    animation: wingFlap 0.3s ease-in-out infinite;
+  }
+
+  .wing-left {
+    animation-delay: 0s;
+  }
+
+  .wing-right {
+    animation-delay: 0.15s;
+  }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .butterfly-container {
+      animation: none;
+      transform: translateX(-50%) translateY(30vh);
+      opacity: 0.7;
+    }
+    .wing {
+      animation: none;
+    }
+  }
+
   .container-md {
     width: 100%;
     @media (width >= 40rem) {
@@ -443,4 +528,9 @@
   --container-width-sm: calc(var(--spacing) * 144);
   --container-width-md: calc(var(--spacing) * 204);
   --container-width-lg: calc(var(--spacing) * 256);
+
+  /* Butterfly animation variables */
+  --butterfly-emerge: butterflyEmerge 3s ease-out forwards;
+  --butterfly-float: floatUp 8s ease-in-out 3s infinite;
+  --butterfly-flap: wingFlap 0.3s ease-in-out infinite;
 }
